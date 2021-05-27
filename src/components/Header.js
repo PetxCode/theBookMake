@@ -34,6 +34,16 @@ const HeaderNav = () => {
         </div>
       </Link>
 
+      <Link to="/addBooks">
+        <div
+          style={{
+            color: "white",
+          }}
+        >
+          Add Book
+        </div>
+      </Link>
+
       {currentUser ? (
         <Button
           type="primary"

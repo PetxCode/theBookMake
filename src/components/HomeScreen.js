@@ -57,15 +57,17 @@ const HomeScreen = () => {
             }}
           >
             <div>
-              <img
-                src={bookCover}
-                style={{
-                  width: "100%",
-                  height: "350px",
-                  objectFit: "cover",
-                  borderRadius: "10px 10px 0 0",
-                }}
-              />
+              <Link to={`/addBooks/${id}`}>
+                <img
+                  src={bookCover}
+                  style={{
+                    width: "100%",
+                    height: "350px",
+                    objectFit: "cover",
+                    borderRadius: "10px 10px 0 0",
+                  }}
+                />
+              </Link>
             </div>
 
             <div

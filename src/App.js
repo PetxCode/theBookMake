@@ -7,6 +7,8 @@ import Register from "./components/Registeration";
 import HeaderNav from "./components/Header";
 import Profile from "./components/ProfilePage";
 import PrivateDownload from "./components/PrivateDownload";
+import BookDetails from "./components/BookDetails";
+import ProvateToHome from "./components/ProvateToHome";
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
           <HeaderNav />
           <Switch>
             <Route exact path="/" component={HomeScreen} />
-            <Route exact path="/addBooks" component={AddBooks} />
+            <ProvateToHome exact path="/addBooks" component={AddBooks} />
+            <Route exact path="/addBooks/:id" component={BookDetails} />
+
             <PrivateDownload exact path="/profile" component={Profile} />
             <Route exact path="/register" component={Register} />
           </Switch>
