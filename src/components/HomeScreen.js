@@ -50,10 +50,10 @@ const HomeScreen = () => {
             style={{
               width: "300px",
               height: "400px",
-              borderRadius: "5px",
-              backgroundColor: "lightblue",
+              borderRadius: "10px 10px 0 0",
+              backgroundColor: "lightgray",
               margin: "10px",
-              marginBottom: "40px",
+              marginBottom: "80px",
             }}
           >
             <div>
